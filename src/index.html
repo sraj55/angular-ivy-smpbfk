@@ -1,0 +1,9 @@
+<my-app>loading</my-app>
+<form ng-app="" name="myForm" ng-init="myText = 'post@myweb.com'">
+  Email:
+  <input type="email" name="myAddress" ng-model="myText" required>
+  <h1>Status</h1>
+  {{myForm.myAddress.$valid}}
+  {{myForm.myAddress.$dirty}}
+  {{myForm.myAddress.$touched}}
+</form>
